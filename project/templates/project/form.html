@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}
+  User Form
+{% endblock %}
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'project/style/form.css' %}" />
+  <link rel="icon" type="image/png" href="{% static 'project/icons/form-icon.png' %}" />
+{% endblock %}
+{% block content %}
+  <form method="post">
+    <h1>User Form</h1>
+    {% csrf_token %}
+    {% if form.name.errors %}
+    <div class="error">{{ form.name.errors }}</div>
+    {% endif %}
+    {% if form.surname.errors %}
+    <div class="error">{{ form.surname.errors }}</div>
+    {% endif %}
+    {% if form.phone_number.errors %}
+    <div class="error">{{ form.phone_number.errors }}</div>
+    {% endif %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}

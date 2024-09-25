@@ -1,0 +1,111 @@
+body {
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #283618;
+    color: #fefae0;
+    padding: 0 2vh;
+}
+.header-title{
+    color: #fefae0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #fefae0;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #606c38;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.body-section{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.tag-line{
+    margin: 10vh;
+    font-size: large;
+}
+.quote-link{
+    background-color: rgb(60, 116, 200);
+    padding:1px 10px;
+    border-radius: 10vh;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 3vh 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 25px;
+}
+.Follow-us{
+    margin-right: 25px;
+}
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+} 
+.socials{
+    height: 4vh;
+    margin-right: 1vh;
+    cursor: pointer;
+    transition: all 1 ease-in-out;
+}
+.socials:hover{
+    background-color: #dda15e;
+    border-radius: 8px;
+}

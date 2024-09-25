@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block page_title %}
+
+      {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'project/style/index.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
+    {% block css_files %}
+
+    {% endblock %}
+  </head>
+  <body>
+    <nav class="header">
+      <h1 class="header-title">Intern Task</h1>
+      <ul>
+        <li>
+          <a href="{% url 'render_html' %}">Home</a>
+        </li>
+        <li>
+          <a href="{% url 'quote-generator' %}">Dynamic Data</a>
+        </li>
+        <li>
+          <a href="{% url 'forms' %}">Form</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="body-section">
+      {% block content %}
+
+      {% endblock %}
+    </section>
+    <footer class="footer">
+      <div>
+        <p>&copy; 2024 Internship Task. All rights reserved.</p>
+        <ul>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Terms of Service</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="Follow-us">Follow us</p>
+        <a href="https://www.instagram.com/chaintech.network/"><img class="socials" src="{% static 'project/icons/insta-icon.png' %}" /></a>
+        <a href="https://x.com/chaintech_net"><img class="socials" src="{% static 'project/icons/twitter-icon.png' %}" /></a>
+        <a href="https://www.linkedin.com/company/chaintech-network/"><img class="socials" src="{% static 'project/icons/linkedin-icon.png' %}" /></a>
+      </div>
+    </footer>
+  </body>
+  {% block script_files %}{% endblock script_files %}
+</html>

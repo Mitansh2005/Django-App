@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}
+  Sucess
+{% endblock %}
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'project/style/success.css' %}" />
+  <link rel="icon" type="image/png" href="{% static 'project/icons/success-icon.png' %}">
+{% endblock %}
+{% block content %}
+  <div class="container">
+    <img src="{% static 'project/icons/success-icon.png' %}" />
+    <p>The form is submitted</p>
+  </div>
+{% endblock %}
+{% block script_files %}
+  <script>
+    // Redirect to index page after the animation completes
+    setTimeout(() => {
+      window.location.href = '/forms' 
+    }, 2000) // Duration should match the CSS animation duration
+  </script>
+{% endblock %}

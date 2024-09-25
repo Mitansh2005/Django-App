@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}
+  Quotes
+{% endblock %}
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'project/style/quote.css' %}" />
+  <link rel="icon" type="image/png" href="{% static "project/icons/quote-icon.png" %}">
+{% endblock %}
+{% block content %}
+  <section class="quotes">
+    <h1>Quote Of the Day</h1>
+    <div class="quote-container">
+      <p class="quote">Quote: {{ quotes.quote }}</p>
+      <p class="quote-author">Author: {{ quotes.author }}</p>
+    </div>
+  </section>
+{% endblock %}

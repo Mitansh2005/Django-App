@@ -1,0 +1,33 @@
+.quote-container{
+    background-color: #606c38;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 2vh;
+    border-radius: 20px;
+    color:#fefae0;
+}
+.quotes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 5vh;
+}
+.quote-generator-btn{
+    width: 25vh;
+    height: 10vh;
+    border-radius: 8vh;
+    font-weight: 600;
+    font-size: large;
+    border: 0;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+.quote-generator-btn:hover{
+    background-color: #283618;
+    color: white;
+    box-shadow: 6px 4px 2px rgba(0, 0, 0, 0.5);
+}

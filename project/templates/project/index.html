@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}
+  Home
+{% endblock %}
+{% block css_files %}
+  <link rel="icon" type="image/png" href="{% static 'project/icons/home-icon.png' %}" />
+{% endblock %}
+{% block content %}
+  <p class="tag-line">
+    Welcome to RandomQuotes, your go-to destination for a daily dose of motivation and wisdom! Here, you'll discover a curated collection of
+    <a href="{% url 'quote-generator' %}" class="quote-link">inspiring quotes</a> from thinkers, leaders, and visionaries across various fields. Whether you're seeking encouragement, reflection, or a spark of creativity, our quotes are designed to uplift your spirit and ignite your passion. Explore our diverse categories, share your favorites, and let the words of others guide you on your journey. Dive in and let inspiration surround you!
+  </p>
+{% endblock %}
