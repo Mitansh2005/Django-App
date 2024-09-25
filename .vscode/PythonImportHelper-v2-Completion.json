@@ -272,6 +272,15 @@
         "documentation": {}
     },
     {
+        "label": "UserFormAdmin",
+        "kind": 6,
+        "importPath": "task.project.admin",
+        "description": "task.project.admin",
+        "peekOfCode": "class UserFormAdmin(admin.ModelAdmin):\n  list_display=[\"id\",\"name\",\"surname\",\"date_of_birth\",\"email\",\"phone_number\"]\n  sortable_by=[\"name\"]\n  list_filter=[\"date_of_birth\"]\nadmin.site.register(UserForm,UserFormAdmin)",
+        "detail": "task.project.admin",
+        "documentation": {}
+    },
+    {
         "label": "ProjectConfig",
         "kind": 6,
         "importPath": "task.project.apps",
